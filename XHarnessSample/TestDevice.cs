@@ -1,5 +1,6 @@
 ﻿using Microsoft.DotNet.XHarness.TestRunners.Common;
-using Microsoft.Maui.Essentials;
+using Microsoft.Maui.ApplicationModel;
+using Microsoft.Maui.Devices;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

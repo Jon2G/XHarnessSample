@@ -4,6 +4,10 @@ using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Maui.LifecycleEvents;
+using Microsoft.Maui.ApplicationModel;
+
+
+
 
 #if __ANDROID__
 
@@ -25,7 +29,7 @@ namespace XHarnessSample
 #if __ANDROID__
 					life.AddAndroid(android =>
 					{
-						android.OnCreate((a, b) => Microsoft.Maui.Essentials.Platform.Init(a, b));
+						android.OnCreate((a, b) => Platform.Init(a, b));
 					});
 #endif
              });
